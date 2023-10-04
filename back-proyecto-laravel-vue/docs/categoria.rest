@@ -1,0 +1,32 @@
+### Listar categorias
+GET http://127.0.0.1:8000/api/categoria
+
+
+### Guardar categoria
+POST http://127.0.0.1:8000/api/categoria
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "Electronicos",
+    "detalle": "Electronicos para PC"
+}
+
+
+### Mostrar categoria
+GET http://127.0.0.1:8000/api/categoria/2
+
+
+### Modificar categoria
+PUT http://127.0.0.1:8000/api/categoria/2
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "Electronicos",
+    "detalle": "Electronicos para PC y sonido"
+}
+
+
+### Elimar categoria
+DELETE http://127.0.0.1:8000/api/categoria/3

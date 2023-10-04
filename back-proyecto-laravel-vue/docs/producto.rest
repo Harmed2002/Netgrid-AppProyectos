@@ -1,0 +1,42 @@
+### Listar productos
+GET http://127.0.0.1:8000/api/producto
+
+
+### Guardar producto
+POST http://127.0.0.1:8000/api/producto
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "Parlantes",
+    "stock": "20",
+    "precio": "300.17",
+    "descripcion": "Parlante Gamer",
+    "categoria_id": 3
+}
+
+
+### Mostrar producto
+GET http://127.0.0.1:8000/api/producto/11
+Accept: application/json
+
+
+### Modificar producto
+PUT http://127.0.0.1:8000/api/producto/11
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": 11,
+    "nombre": "Ropa de Prueba2",
+    "stock": 200,
+    "precio": 15000,
+    "descripcion": "Ropa de Prueba2",
+    "estado": 0,
+    "categoria_id": 1
+  }
+
+
+### Eliminar producto
+DELETE http://127.0.0.1:8000/api/producto/10
+
